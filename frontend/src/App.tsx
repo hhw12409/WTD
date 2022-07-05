@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect } from 'react';
+import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import GlobalStyle from "./styles/GlobalStyle";
@@ -6,8 +6,8 @@ import GlobalStyle from "./styles/GlobalStyle";
 import PATH from './constants/path';
 import LodingPage from '@pages/LodingPage';
 
+const RootPage = lazy(() => import('@pages/RootPage'));
 const HomePage = lazy(() => import('@pages/HomePage'));
-const MainPage = lazy(() => import('@pages/MainPage'));
 const LoginPage = lazy(() => import('@pages/LoginPage'));
 const MyPage = lazy(() => import('@pages/MyPage'));
 const ErrorPage = lazy(() => import('@pages/ErrorPage'));
@@ -23,7 +23,7 @@ function App() {
         <GlobalStyle/>
         <Suspense fallback={<LodingPage/>}>
           <Routes>
-            <Route path={PATH.ROOT} element={<MainPage/>} />
+            <Route path={PATH.ROOT} element={<RootPage/>} />
             <Route path={PATH.HOME} element={<HomePage/>} />
             <Route path={PATH.LOGIN} element={<LoginPage/>} />
             <Route path={PATH.MYPAGE} element={<MyPage/>} />
