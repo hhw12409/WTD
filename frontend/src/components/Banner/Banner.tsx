@@ -1,5 +1,7 @@
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { BannerBg, BannerBox, BannerWrapper, BannerTitle, BannerContent, BannerHome } from './Banner.styles'
+import { Link } from 'react-router-dom';
+import PATH from '@constants/path'
 
 function Banner() {
   return (
@@ -13,7 +15,9 @@ function Banner() {
             다른사람들에게 자신만의 여행코스를 공유할 수 있어요
           </BannerContent>
         </BannerWrapper>
-        <BannerHome>Homepage<ArrowRightIcon fontSize="large"/></BannerHome>
+        <BannerHome>
+          <Link style={{ textDecoration:'none'}}to={PATH.HOME}>Homepage</Link>
+        </BannerHome>
       </BannerBox>
     </BannerBg>
   );

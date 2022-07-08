@@ -5,7 +5,6 @@ import styled from "styled-components";
 const RootPage = () => {
 
   return (
-    
     <Container>
       <Banner/>
       <RecommendCard/>
