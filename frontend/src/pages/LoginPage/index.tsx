@@ -1,6 +1,7 @@
 import FlexBox from '@components/@shared/FlexBox/FlexBox';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import { Button } from '@mui/material';
 import { useState } from 'react';
 
 const LoginPage = () => {
@@ -9,7 +10,7 @@ const LoginPage = () => {
     setName(event.target.value);
   };
   return (
-    <FlexBox alignItems="center" justifyContent="center">
+    <FlexBox alignItems="center" justifyContent="center" height="100vh">
       <Box
         component="form"
         sx={{
@@ -21,6 +22,7 @@ const LoginPage = () => {
         <TextField id="outlined-name" label="ID" value={name} onChange={handleChange} />
         <TextField id="outlined-uncontrolled" label="Password" type="password" />
       </Box>
+      <Button variant="outlined">Login</Button>
     </FlexBox>
   );
 };
