@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
-import { FONT } from "../../constants/font"
-import { SIZE } from "../../constants/size"
+import { FONT } from '../../constants/font';
+import { SIZE } from '../../constants/size';
 
 const BannerBg = styled.div`
-  background-image: url("https://source.unsplash.com/random/");
+  background-image: url('https://source.unsplash.com/random/');
   background-size: cover;
   background-position: center;
   width: var(--banner-size-width);
@@ -11,7 +11,7 @@ const BannerBg = styled.div`
 `;
 
 const BannerBox = styled.div`
-  width : 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,33 +20,33 @@ const BannerBox = styled.div`
 
 const BannerWrapper = styled.div`
   display: flex;
-  flex-direction : column;
-  width : 50%;
-`
+  flex-direction: column;
+  width: 50%;
+`;
 
 const BannerTitle = styled.div`
   color: var(--color-white);
   font-weight: var(--font-weight-small);
   font-size: var(--font-size-medium);
-  width : 100%;
-  text-align : start;
-  margin-bottom : var(--margin-size-small);
+  width: 100%;
+  text-align: start;
+  margin-bottom: var(--margin-size-small);
 `;
 
 const BannerContent = styled.div`
-  color : var(--color-white);
-  width : 100%;
-  text-align : start;
-  line-height : var(--line-height-medium)
+  color: var(--color-white);
+  width: 100%;
+  text-align: start;
+  line-height: var(--line-height-medium);
 `;
 
 const BannerHome = styled.div`
-  font-size : 20px;
-  text-transform : uppercase;
+  font-size: 20px;
+  text-transform: uppercase;
   border: 1px solid black;
   background: white;
   color: black;
-  padding : 12px 28px;
+  padding: 5px 12px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -55,8 +55,8 @@ const BannerHome = styled.div`
   font-weight: 800;
   &:hover {
     color: white;
-    background: black;
+    background: #eee;
   }
-`
+`;
 
 export { BannerBg, BannerBox, BannerWrapper, BannerTitle, BannerContent, BannerHome };

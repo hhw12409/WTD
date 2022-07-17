@@ -1,16 +1,19 @@
-import {Center, Nav, LogoBox, Button, MyPageButton, LoginButton} from './Navbar.styles'
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import { Nav, MyPageButton, LoginButton } from './Navbar.styles';
+import GoBackButton from '../@shared/GoBackButton/GoBackButton';
+import { Link } from 'react-router-dom';
+import PATH from '@constants/path';
 
 function Navbar() {
   return (
     <Nav>
-      <Center>
-        <ArrowBackIosNewIcon/><span>back</span>
-      </Center>
-      <LogoBox>Logo</LogoBox>
+      <GoBackButton></GoBackButton>
       <div>
-        <MyPageButton>마이페이지</MyPageButton>
-        <LoginButton>로그인</LoginButton>
+        <Link to={PATH.MYPAGE}>
+          <MyPageButton>마이페이지</MyPageButton>
+        </Link>
+        <Link to={PATH.LOGIN}>
+          <LoginButton>로그인</LoginButton>
+        </Link>
       </div>
     </Nav>
   );
