@@ -13,6 +13,7 @@ const Nav = styled(Center)`
   justify-content: space-around;
   width: 100%;
   margin-top: var(--margin-size-base);
+  padding: 15px;
 `;
 
 const Button = styled.button`

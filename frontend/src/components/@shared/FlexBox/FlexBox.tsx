@@ -6,6 +6,7 @@ const FlexBox = styled.div<React.CSSProperties>`
     Flex({ flexDirection, justifyContent, flexWrap, alignItems, rowGap, columnGap })}
   ${({ margin }) => `margin: ${margin}`};
   ${({ height }) => `height: ${height}`};
+  ${({ width }) => `width: ${width}`};
 `;
 
 export default FlexBox;

@@ -1,11 +1,12 @@
 interface IPath {
-  [key: string]:string
+  [key: string]: string;
 }
 
 const PATH: IPath = {
   ROOT: '/',
   HOME: '/home',
   FREE_BOARD: '/freeboard',
+  RECOMMEND: '/recommend',
   LOGIN: '/login',
   OAUTH: '/oauth',
   MYPAGE: '/mypage',

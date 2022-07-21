@@ -10,6 +10,7 @@ const RootPage = lazy(() => import('@pages/RootPage'));
 const HomePage = lazy(() => import('@pages/HomePage'));
 const LoginPage = lazy(() => import('@pages/LoginPage'));
 const MyPage = lazy(() => import('@pages/MyPage'));
+const RecommendPage = lazy(() => import('@pages/RecommendPage'));
 const ErrorPage = lazy(() => import('@pages/ErrorPage'));
 const SearchPage = lazy(() => import('@pages/SearchPage'));
 const SearchResultPage = lazy(() => import('@pages/SearchResultPage'));
@@ -25,6 +26,7 @@ function App() {
           <Route path={PATH.HOME} element={<HomePage />} />
           <Route path={PATH.LOGIN} element={<LoginPage />} />
           <Route path={PATH.MYPAGE} element={<MyPage />} />
+          <Route path={PATH.RECOMMEND} element={<RecommendPage />} />
           <Route path={PATH.SEARCH} element={<SearchPage />} />
           <Route path={PATH.SEARCH_RESULT} element={<SearchResultPage />} />
           <Route path={PATH.ERROR_PAGE} element={<ErrorPage />} />
