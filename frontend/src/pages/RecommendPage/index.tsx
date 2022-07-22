@@ -1,5 +1,11 @@
+import Navbar from '@components/Navbar/Navbar';
+
 const RecommendPage = () => {
-  return <div>Recommend Page</div>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 };
 
 export default RecommendPage;

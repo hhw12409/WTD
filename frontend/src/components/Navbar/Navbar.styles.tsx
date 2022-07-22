@@ -11,7 +11,6 @@ const Center = styled.div`
 const Nav = styled(Center)`
   display: flex;
   justify-content: space-around;
-  width: 100%;
   margin-top: var(--margin-size-base);
   padding: 15px;
 `;
